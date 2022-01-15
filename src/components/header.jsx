@@ -8,7 +8,7 @@ function Header() {
     <div className="mt-12 lg:mt-14">
       <div className="flex items-center justify-center gap-2">
         <ImLeaf className="text-base-purple" size={27} />
-        <p className="text-2xl font-semibold text-text-black">onBoarding</p>
+        <p className="text-2xl font-semibold text-text-black">Cutshort onboarding</p>
       </div>
       <div className="">
         <div className="mt-10 lg:mt-16 flex justify-center gap-5 lg:gap-10">
