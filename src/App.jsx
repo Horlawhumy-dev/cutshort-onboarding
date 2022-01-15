@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Loader from "./components/Loader/loader";
 import Header from "./components/header";
 import Welcome from "./pages/welcome";
@@ -10,19 +10,20 @@ import Complete from "./pages/complete";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-
+  const location = useLocation();
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1500);
   }, []);
+
   return (
     <div className="App">
       {isLoading ? (
         <Loader />
       ) : (
         <>
-          <Header />
+          <Header pathName={location.pathname} />
           <Routes>
             <Route exact path="/" element={<Welcome />} />
             <Route exact path="/workspace" element={<Workspace />} />
