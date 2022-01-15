@@ -24,7 +24,7 @@ function Welcome() {
           type="text"
           placeholder="e.g; Steve"
         />
-        <NextButton tag={"Next"} />
+        <NextButton tag={"Next"} link={"/workspace"} />
       </div>
     </div>
   );
