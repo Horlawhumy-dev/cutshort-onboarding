@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import useScreensize from "../hooks/useScreensize";
 
-function ProgressLine({ active }) {
+function ProgressLine({ active, complete }) {
   const { width } = useScreensize();
   const [onLargeScreen, setOnLargeScreen] = useState();
 
@@ -15,7 +15,9 @@ function ProgressLine({ active }) {
         <>
           <div
             className={
-              "line absolute w-5 " + (active ? "bg-base-purple" : "bg-gray-200")
+              "line absolute " +
+              (active ? "bg-base-purple " : "bg-gray-200 ") +
+              (complete ? "w-14" : "w-5")
             }
             style={{
               height: "2px",
@@ -38,7 +40,9 @@ function ProgressLine({ active }) {
         <>
           <div
             className={
-              "line absolute w-7 " + (active ? "bg-base-purple" : "bg-gray-200")
+              "line absolute " +
+              (active ? "bg-base-purple " : "bg-gray-200 ") +
+              (complete ? "w-10" : "w-7")
             }
             style={{ height: "2px", top: "45%", left: "30%", zIndex: "-1" }}
           ></div>
