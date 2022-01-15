@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LoginPage from "./components/login";
-import SignupPage from "./components/signup";
 import Loader from "./components/Loader/loader";
 import Header from "./components/header";
 import Welcome from "./pages/welcome";
 import Workspace from "./pages/workspace";
+import HowToUse from "./pages/howToUse";
+import Complete from "./pages/complete";
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -23,10 +24,10 @@ function App() {
         <>
           <Header />
           <Routes>
-            <Route exact path="/signin" element={<LoginPage />} />
-            <Route exact path="/signup" element={<SignupPage />} />
             <Route exact path="/" element={<Welcome />} />
             <Route exact path="/workspace" element={<Workspace />} />
+            <Route exact path="/howtouse" element={<HowToUse />} />
+            <Route exact path="/complete" element={<Complete />} />
           </Routes>
         </>
       )}
