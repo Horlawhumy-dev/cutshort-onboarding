@@ -1,10 +1,10 @@
 import React from "react";
 
-function InputBox({ id, label, type, placeholder }) {
+function InputBox({ id, label, optional, type, placeholder }) {
   return (
     <div className="w-3/4 md:w-6/12 lg:w-3/12 mt-7 flex flex-col items-start">
       <label htmlFor={id} className="text-left text-sm text-gray-700">
-        {label}
+        {label} <span className="text-gray-400">{optional}</span>
       </label>
 
       <input
