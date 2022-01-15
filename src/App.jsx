@@ -5,6 +5,7 @@ import LoginPage from "./components/login";
 import SignupPage from "./components/signup";
 import Loader from "./components/Loader/loader";
 import Header from "./components/header";
+import Welcome from "./pages/welcome";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route exact path="/signin" element={<LoginPage />} />
             <Route exact path="/signup" element={<SignupPage />} />
+            <Route exact path="/" element={<Welcome />} />
           </Routes>
         </>
       )}
