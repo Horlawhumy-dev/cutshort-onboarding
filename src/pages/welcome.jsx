@@ -1,5 +1,6 @@
 import React from "react";
 import InputBox from "../components/inputBox";
+import NextButton from "../components/nextButton";
 
 function Welcome() {
   return (
@@ -23,9 +24,7 @@ function Welcome() {
           type="text"
           placeholder="e.g; Steve"
         />
-        <button className="mt-8 py-2 w-3/4 md:w-6/12 lg:w-3/12 bg-base-purple text-white rounded">
-          Next
-        </button>
+        <NextButton tag={"Next"} />
       </div>
     </div>
   );
