@@ -25,7 +25,7 @@ function Workspace() {
           type="text"
           placeholder="e.g; www.eden.com/"
         />
-        <NextButton tag={"Next"} link={"/workspace"} />
+        <NextButton tag={"Next"} link={"/howtouse"} />
       </div>
     </div>
   );
