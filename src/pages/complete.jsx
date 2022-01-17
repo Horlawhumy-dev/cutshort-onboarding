@@ -12,7 +12,7 @@ function Complete() {
         Congratulations Cutshorter!
       </p>
       <p className="mt-2 text-xs lg:text-sm font-light text-gray-400">
-        You have completed onboarding, you can start using the Eden
+        You have completed the onboarding, you can start using Cutshort
       </p>
       <NextButton tag="Launch Cutshort" link="/" />
     </div>
