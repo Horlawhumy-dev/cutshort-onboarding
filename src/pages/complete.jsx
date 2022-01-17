@@ -9,12 +9,12 @@ function Complete() {
         <CheckComplete />
       </div>
       <p className="mt-5 text-lg font-medium lg:text-2xl text-text-black">
-        Congratulations!
+        Congratulations Cutshorter!
       </p>
       <p className="mt-2 text-xs lg:text-sm font-light text-gray-400">
         You have completed onboarding, you can start using the Eden
       </p>
-      <NextButton tag="Launch" link="/" />
+      <NextButton tag="Launch Cutshort" link="/" />
     </div>
   );
 }
